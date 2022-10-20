@@ -33,7 +33,7 @@ script:
 # - docker ps -a 
 
 branch:
-- master 
+- main 
 
 deploy:
   provider: heroku
