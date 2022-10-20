@@ -32,7 +32,7 @@ script:
 # - docker run -d -p 8080:8080 forethought
 # - docker ps -a 
 
-brannch:
+branch:
 - master 
 
 deploy:
