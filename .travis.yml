@@ -18,14 +18,21 @@ install: # Hook provided by Travis CI
 script:
 - npm test
 
-# The default for ubuntu 20.04
-dist:
-- focal
+# # The default for ubuntu 20.04
+# dist:
+# - focal
 
-services: 
-- docker
+# services: 
+# - docker
 
-before_install:
-- docker build -t forethought .
-- docker run -d -p 8080:8080 forethought
-- docker ps -a 
+# before_install:
+# - docker build -t forethought .
+# - docker run -d -p 8080:8080 forethought
+# - docker ps -a 
+
+deploy:
+  provider: heroku
+  skip_cleanup: true
+  keep-history: true
+  api-key: HEROKU_API_KEY
+  app: CICDDemo
