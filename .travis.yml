@@ -32,9 +32,7 @@ script:
 # - docker run -d -p 8080:8080 forethought
 # - docker ps -a 
 
-branches:
-  only:
-    - main
+all_branches: true
 
 deploy:
   provider: heroku
