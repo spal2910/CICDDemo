@@ -41,5 +41,5 @@ deploy:
   api-key: ${HEROKU_TOKEN}
   app: travis-cicd
   branches:
-  only:
-    - main
+    only:
+      - main
