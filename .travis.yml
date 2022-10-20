@@ -32,7 +32,9 @@ script:
 # - docker run -d -p 8080:8080 forethought
 # - docker ps -a 
 
-
+branches:
+  only:
+    - master
 
 deploy:
   provider: heroku
@@ -41,6 +43,4 @@ deploy:
   api_key: ${HEROKU_TOKEN}
   app: travis-cicd
   all_branches: true
-  branches:
-    only:
-      - master
+
