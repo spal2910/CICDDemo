@@ -38,8 +38,7 @@ deploy:
   keep-history: true
   api_key: ${HEROKU_TOKEN}
   app: travis-cicd
-  on:
-    all_branches: true
+  all_branches: true
   # branches:
   #   only:
   #     - main
