@@ -32,15 +32,14 @@ script:
 # - docker run -d -p 8080:8080 forethought
 # - docker ps -a 
 
-branch:
-- main 
-
 deploy:
   provider: heroku
   skip-cleanup: true
   keep-history: true
   api_key: ${HEROKU_TOKEN}
   app: travis-cicd
+  on:
+    all_branches: true
   # branches:
   #   only:
   #     - main
