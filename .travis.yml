@@ -43,4 +43,4 @@ deploy:
   all_branches: true
   branches:
     only:
-      - main
+      - master
