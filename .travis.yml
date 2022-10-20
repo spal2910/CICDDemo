@@ -37,9 +37,9 @@ branch:
 
 deploy:
   provider: heroku
-  skip_cleanup: true
+  skip-cleanup: true
   keep-history: true
-  api-key: ${HEROKU_TOKEN}
+  api_key: ${HEROKU_TOKEN}
   app: travis-cicd
   # branches:
   #   only:
