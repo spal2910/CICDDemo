@@ -32,6 +32,10 @@ script:
 # - docker run -d -p 8080:8080 forethought
 # - docker ps -a 
 
+branches:
+  only:
+    - main
+
 deploy:
   provider: heroku
   skip-cleanup: true
