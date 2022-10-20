@@ -18,6 +18,8 @@ install: # Hook provided by Travis CI
 script:
 - npm test
 
+
+
 # # The default for ubuntu 20.04
 # dist:
 # - focal
@@ -30,9 +32,12 @@ script:
 # - docker run -d -p 8080:8080 forethought
 # - docker ps -a 
 
+
+
 deploy:
   provider: heroku
   skip_cleanup: true
   keep-history: true
+  all_branches: true
   api-key: ${HEROKU_TOKEN}
   app: travis-cicd
