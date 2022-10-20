@@ -10,5 +10,9 @@ app.get('/', (req, res) => {
   res.status(200).json('Hello world from Travis! CICD challenge')
 })
 
+app.post('/', (req, res) =>{
+    res.send("hello")
+})
+
 // Exporting the home route so it can be tested
 module.exports = app.listen(port, () => console.log(`Your application is running on ${port}`))
